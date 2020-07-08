@@ -1,6 +1,6 @@
 # 一键申请Let's Encrypt域名证书
 
-## Only Linux
+## Only Linux | NGINX
 
 ### 使用:
 
