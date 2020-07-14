@@ -11,7 +11,7 @@ service nginx stop
 service nginx start
 if ls ./.lego/certificates | grep "$domain"
     then
-    mkdir /home/ssl/$domain
+    mkdir -p /home/ssl/$domain
     cp ./.lego/certificates/$domain.crt /home/ssl/$domain/$domain.pem
     cp ./.lego/certificates/$domain.key /home/ssl/$domain/$domain.key
     path="/home/ssl/$domain/"
